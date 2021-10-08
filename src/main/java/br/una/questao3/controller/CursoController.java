@@ -35,8 +35,8 @@ public class CursoController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Curso> autalizar(@PathVariable Long id,
-                                           @RequestBody  Curso cursoAtualizado) {
-         return cursoService.atualizar(id, cursoAtualizado);
+                                           @RequestBody Curso cursoAtualizado) {
+        return cursoService.atualizar(id, cursoAtualizado);
     }
 
     @DeleteMapping("/{id}")

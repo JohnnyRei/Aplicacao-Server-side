@@ -37,9 +37,9 @@ public class CursoService {
         if (!cursoRepository.existsById(idCurso))
             return ResponseEntity.notFound().build();
 
-            cursoRepository.deleteById(idCurso);
+        cursoRepository.deleteById(idCurso);
 
-            return ResponseEntity.ok().build();
+        return ResponseEntity.ok().build();
     }
 
 }
